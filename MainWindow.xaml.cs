@@ -89,7 +89,7 @@ namespace _184905HangmanProject
                     }
 
                     correctanswer = easyanswer[randomnumber];
-                    // correctanswer = "cat";
+                    
                 }
                 easyread.Close();
 
@@ -118,7 +118,7 @@ namespace _184905HangmanProject
                     }
 
                     correctanswer = mediumanswer[randomnumber];
-                    //correctanswer = "angry";
+                    
                 }
                 mediumread.Close();
                 for (int i = 0; i < correctanswer.Length; i++)
@@ -145,7 +145,7 @@ namespace _184905HangmanProject
                     }
 
                     correctanswer = hardanswer[randomnumber];
-                    //there is no hard text file saved to your computer right now
+                   
 
                     
                 }
