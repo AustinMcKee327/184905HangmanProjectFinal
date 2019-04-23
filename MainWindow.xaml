@@ -1,0 +1,23 @@
+﻿<Window x:Class="_184905HangmanProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_184905HangmanProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="800">
+    <StackPanel>
+        <RadioButton x:Name="EasyMode" Content="Easy"/>
+        <RadioButton x:Name="MediumMode" Content="Medium" />
+        <RadioButton x:Name="HardMode" Content="Hard"/>
+        <Button x:Name="StartGame" Content="Click to start a new game!" Click="StartGame_Click" FontSize="18"/>
+        <TextBox x:Name="LetterInput" MaxLength="1" TextChanged="LetterCheck_Click" FontSize="18"/>
+        <Label Content="Type your guess in the space above!"/>
+        <Label x:Name="LetterLabel" Content="You have guessed:" />
+        <TextBlock x:Name="LettersGuessed"/>
+        <Label x:Name="WordString" Content="The word so far is:"/>
+        <TextBlock x:Name="OutputWords"/>
+        <Label x:Name="GameOverShower"/>
+        <Canvas x:Name="Stickman"/>
+    </StackPanel>
+</Window>
